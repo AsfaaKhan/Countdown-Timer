@@ -64,7 +64,7 @@ else if (ask.ans === "Minutes" ) {
     const timerForMinutes = await inquirer.prompt({
         name: "userInput",
         type: "number",
-        message: "Enter The Number of seconds for  timer: ",
+        message: "Enter The Number of minutes for  timer: ",
         validate: (input: any) => {
             if (isNaN(input)) {
                 return "Please Enter Only Number";
